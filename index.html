@@ -1,0 +1,50 @@
+export default {
+  async fetch(request) {
+    return new Response(`
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>سایت من</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    p {
+      opacity: 0.7;
+    }
+    .box {
+      padding: 20px 40px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>سایت با موفقیت بالا آمد</h1>
+    <p>اگر اینو می‌بینی یعنی همه چیز درست کار می‌کنه</p>
+  </div>
+</body>
+</html>
+    `, {
+      headers: {
+        "Content-Type": "text/html"
+      }
+    });
+  }
+}
