@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MOON and SkY</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:tahoma;
+}
+
+body{
+height:100vh;
+background:linear-gradient(180deg,#fff8f5,#eef7ff);
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+.cloud{
+position:absolute;
+font-size:80px;
+opacity:.5;
+animation:moveCloud 25s linear infinite;
+}
+
+.cloud1{
+top:10%;
+left:-20%;
+}
+
+.cloud2{
+top:40%;
+left:-30%;
+animation-duration:35s;
+}
+
+.cloud3{
+top:75%;
+left:-25%;
+animation-duration:30s;
+}
+
+@keyframes moveCloud{
+from{
+transform:translateX(0);
+}
+to{
+transform:translateX(150vw);
+}
+}
+
+.hero{
+text-align:center;
+z-index:10;
+}
+
+.logo{
+font-size:70px;
+margin-bottom:15px;
+}
+
+h1{
+font-size:55px;
+color:#222;
+}
+
+.subtitle{
+margin-top:10px;
+color:#666;
+font-size:18px;
+}
+
+.counter{
+margin-top:20px;
+background:white;
+padding:15px 25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+display:inline-block;
+}
+
+.login-box{
+margin-top:25px;
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+width:300px;
+margin-right:auto;
+margin-left:auto;
+}
+
+.login-box h2{
+margin-bottom:15px;
+font-size:18px;
+}
+
+.login-box input{
+width:100%;
+padding:12px;
+border:1px solid #ddd;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.login-box button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#222;
+color:white;
+font-size:16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="cloud cloud1">☁️</div>
+<div class="cloud cloud2">☁️</div>
+<div class="cloud cloud3">☁️</div>
+
+<div class="hero">
+
+<div class="logo">🌙❤️☁️</div>
+
+<h1>MOON and SkY</h1>
+
+<p class="subtitle">
+هر خاطره‌ای جایی در آسمان دارد
+</p>
+
+<div class="counter">
+۹ ماه کنار هم ❤️
+</div>
+
+<div class="login-box">
+
+<h2>ورود به آسمان خاطرات</h2>
+
+<input type="password" placeholder="رمز ورود">
+
+<button>
+ورود
+</button>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
